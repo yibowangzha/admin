@@ -86,7 +86,7 @@ export default {
     goout() {
       this.$confirm("您确定要退出登录", "提示", {
         confirmButtonText: "确定",
-        // cancelButtonText: '取消',
+        cancelButtonText: '取消',
         type: "warning"
       }).then(() => {
         sessionStorage.removeItem("token");
@@ -95,7 +95,13 @@ export default {
           type: "success",
           message: "退出成功!"
         });
-      });
+      })
+       .catch(() => {
+          this.$message({
+            type: 'info',
+            message: '已取消退出'
+          });          
+        });
     },
     // 左侧菜单
     async menus() {
@@ -193,5 +199,8 @@ export default {
     text-align: center;
     background:  #4a5064;
   }
+}
+.el-main{
+  background-color:#eaedf1;
 }
 </style>

@@ -14,6 +14,12 @@ export function put(url, data) {
     return request.put(url, data)
 }
 
+export function del(url, data) {
+    return request.delete(url,{
+        params:data
+    })
+}
+
 // 登录接口
 export function ajaxlogin(type,data){
     return post(type,data)
@@ -31,6 +37,28 @@ export function ajaxaddusers(type,data){
     return post(type,data)
 }
 // 修改用户状态
-export function ajaxxiugai(type,data){
-    return put(type,data)
+export function ajaxupdate(type,data){
+    return put(`users/${type}/state/${data}`)
+}
+// 删除用户
+export function ajaxdelete(type){
+    return del(`users/${type}`)
+}
+// 修改
+export function ajaxrevise(type){
+    return get(`users/${type}`)
+}
+// 更新
+export function ajaxrenewal(type,data){
+    return put(`users/${type}`,data)
+}
+
+
+
+
+
+
+
+export function ajax2roles(type){
+    return get(type)
 }
