@@ -268,6 +268,12 @@ export default {
     async xiugai1(id) {
       let { data: renewal } = await ajaxrenewal(id, this.form);
       console.log(renewal);
+      if(renewal.meta.status == '200'){
+        this.$message({
+          type: "success",
+          message: renewal.meta.msg
+        });
+      }
       this.ajax();
       this.dialogFormVisible1 = false;
     },

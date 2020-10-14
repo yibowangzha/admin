@@ -6,6 +6,8 @@ import store from './store'
 import './plugins/element.js'
 import http from  './http/request'
 import { get,post} from './http/api'
+import echarts from 'echarts'
+Vue.prototype.$echarts = echarts 
 Vue.config.productionTip = false
 Vue.prototype.$http = http
 Vue.prototype.$get = get

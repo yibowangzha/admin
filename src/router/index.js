@@ -33,6 +33,41 @@ const routes = [
         path:'roles',
         name:'Roles',
         component:() => import('../views/index/roles.vue')
+      },
+      {
+        path:'add',
+        name:'Add',
+        component:() => import('../views/index/add.vue')
+      },
+      {
+        path:'goods',
+        name:'Goods',
+        component:() => import('../views/index/goods.vue'),
+      },
+      {
+        path:'params',
+        name:'Params',
+        component:() => import('../views/index/params.vue')
+      },
+      {
+        path:'orders',
+        name:'Orders',
+        component:() => import('../views/index/orders.vue')
+      },
+      {
+        path:'reports',
+        name:'Reports',
+        component:() => import('../views/index/reports.vue')
+      },
+      {
+        path:'categories',
+        name:'Categories',
+        component:() => import('../views/index/categories.vue')
+      },
+      {
+        path:'rights',
+        name:'Rights',
+        component:() => import('../views/index/rights.vue')
       }
     ],
     component: () => import('../views/index.vue'),
