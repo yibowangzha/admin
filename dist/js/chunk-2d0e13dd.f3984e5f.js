@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0e13dd"],{"7a30":function(n,t,e){"use strict";e.r(t);var c=function(){var n=this,t=n.$createElement,e=n._self._c||t;return e("div",[n._v(" 商品分类 ")])},a=[],o={name:"",props:[],components:{},data:function(){return{}},computed:{},watch:{},methods:{},created:function(){},mounted:function(){},updated:function(){},activated:function(){},deactivated:function(){}},u=o,d=e("2877"),i=Object(d["a"])(u,c,a,!1,null,"eece960a",null);t["default"]=i.exports}}]);
+//# sourceMappingURL=chunk-2d0e13dd.f3984e5f.js.map
